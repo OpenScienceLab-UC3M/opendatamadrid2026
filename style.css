@@ -1,0 +1,410 @@
+/* ====== RESET DE ESTILOS ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #ffffff; /* Fondo blanco para la home */
+    color: #333;
+}
+
+
+/* ====== CABECERA / NAVBAR ====== */
+header {
+    background-color: #ffffff;
+    padding: 30px 100px;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #d20a11;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 20px; /* Tamaño más pequeño para pantallas móviles */
+    }
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #d20a11;
+}
+
+.nav-links li {
+    margin-left: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #ffffff;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* ====== HOME ====== */
+.home {
+    width: 90%;
+    max-width: 1200px; /* Limitar el ancho del contenido en la home */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para la home */
+}
+
+.dashboard {
+    width: 90%;
+    max-width: 1400px; /* Limitar el ancho del contenido en la home */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para la home */
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        width: 100%; /* Asegura que el dashboard ocupe el 100% del ancho en móviles */
+        padding: 10px; /* Puedes ajustar el padding para móviles si es necesario */
+    }
+}
+
+/* ====== CONTENIDO PRINCIPAL (ARTÍCULO) ====== */
+main.article {
+    max-width: 800px; /* Estrechar el contenedor principal */
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+	margin: 40px;
+}
+
+h1 {
+    color: #d20a11;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 26px;
+    color: #d20a11;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;/
+}
+
+/* ====== SECCIONES DE GRÁFICOS ====== */
+section {
+    margin-bottom: 40px;
+}
+
+
+/* ====== FORMATO DE LISTAS ====== */
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+ul li {
+    margin: 8px 0;
+    font-size: 18px;
+    padding-left: 15px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    color: #d20a11;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* ====== TABLAS (Solo se aplica en la página del artículo) ====== */
+.article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.article table th, .article table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.article table th {
+    background-color: #f4f4f4;
+    color: #d20a11;
+    font-weight: bold;
+}
+
+.article table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.article table tr:hover {
+    background-color: #e8e8e8;
+}
+
+.article table td {
+    font-size: 16px;
+}
+
+/* ====== PIE DE PÁGINA (PÁGINA PRINCIPAL) ====== */
+footer {
+    border-top: 1px solid #b5b5b5;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+footer p {
+    max-width: 95%;
+    margin: 0 auto;
+    font-size: 12pt;
+    line-height: 1.4;
+}
+
+/* Centrado de los enlaces en el pie de página */
+footer p {
+    text-align: center;
+}
+
+a {
+    color: #d20a11;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e3666a;
+}
+
+/* Estilo para el bloque de información de autor */
+
+.entradilla{
+	text-align: center;
+}
+
+.separator {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    margin: 0 auto;
+	margin-top: 10px !important;
+	margin-bottom: -10px !important;
+}
+
+.author-info {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.author-info p {
+    margin: 5px 0;
+}
+
+.author-info .author-link:hover {
+    color: #e3666a; /* Cambiar color del enlace al pasar el ratón */
+}
+
+.author {
+	text-align: center;
+	font-size: 18px;
+}
+
+.date {
+    font-style: italic;
+    font-size: 15px; /* Tamaño un poquito más pequeño para la fecha */
+	text-align: center;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #e3666a; /* Color al pasar el mouse */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+
+    .social-buttons {
+        gap: 8px;
+    }
+
+    .social-icon {
+        font-size: 18px;
+    }
+}
+
+.funcionalidades {
+    /*background-color: #f9f9f9;*/
+    padding: 40px 20px;
+}
+
+.funcionalidades-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+	margin-top: -80px !important;
+}
+
+.funcionalidades-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.funcionalidad-card {
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    padding-top: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Añadimos la sombra */
+}
+
+
+h3 {
+    font-size: 20px;
+    color: #d20a11;
+    margin-bottom: 10px;
+	font-weight: bolder;
+}
+
+/* ====== PÁGINA RESPONSIVA ====== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 16pt;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+    /* Ajustes para listas en mobile */
+    ul li {
+        font-size: 16px; /* Reducir el tamaño de la fuente de las listas en mobile */
+    }
+
+    /* Eliminar las sombras y bordes redondeados en mobile */
+    .home, .article {
+        box-shadow: none !important; /* Eliminar sombras */
+        border-radius: 0 !important; /* Eliminar bordes redondeados */
+        width: 100% !important; /* Dejar que ocupe todo el ancho en mobile */
+        padding: 8px !important; /* Reducir el padding para más espacio */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 16pt;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .funcionalidades-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.funcionalidad-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

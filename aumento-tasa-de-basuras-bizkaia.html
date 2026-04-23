@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El dispar aumento de la tasa de residuos en Bizkaia en 2025</title>
+		<meta name="description" content="La tasa de residuos sube en Bizkaia en 2025, pero con grandes diferencias entre municipios: más de la mitad aumentan más del 10% y algunos alcanzan el 170%.">
+
+        <!-- ====== OPEN GRAPH ====== -->
+        <meta property="og:title" content="El dispar aumento de la tasa de basuras y las grandes diferencias entre municipios de Bizkaia">
+        <meta property="og:description" content="La tasa de residuos aumenta, pero no igual en todos los municipios de Bizkaia. Más de la mitad han subido más de un 10%, algunos hasta un 170%.">
+        <meta property="og:image" content="https://opensciencelab-uc3m.github.io/opendatabizkaia/contenedores-bilbao.jpg">
+        <meta property="og:url" content="https://opensciencelab-uc3m.github.io/opendatabizkaia/aumento-tasa-de-basuras-bizkaia.html">
+        <meta property="og:type" content="article">
+        <meta property="og:locale" content="es_ES">
+
+        <!-- ====== TWITTER CARDS ====== -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="El dispar aumento de la tasa de basuras y las grandes diferencias entre municipios de Bizkaia">
+        <meta name="twitter:description" content="La tasa de residuos aumenta, pero no igual en todos los municipios de Bizkaia. Más de la mitad han subido más de un 10%, algunos hasta un 170%.">
+        <meta name="twitter:image" content="https://opensciencelab-uc3m.github.io/opendatabizkaia/contenedores-bilbao.jpg">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- ====== CABECERA / NAVBAR ====== -->
+		<header>
+			<nav class="navbar">
+				<a href="index.html" class="logo">Bizkaia Environmental Data Hub</a>
+				<ul class="nav-links">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="video-evolucion-del-reciclaje-bizkaia.html">Vídeo</a></li>
+					<li><a href="aumento-tasa-de-basuras-bizkaia.html">Reportaje</a></li>
+				</ul>
+				<div class="menu-icon" id="menu-icon">&#9776;</div>
+			</nav>
+		</header>
+
+        <!-- ====== CONTENIDO PRINCIPAL ====== -->
+        <main class="article">
+
+            <div class="hero-content">
+
+                <h1>¿Quien más contamina, más paga? El dispar aumento de la tasa de residuos en Bizkaia en 2025</h1>
+
+                <p class="entradilla">
+                    La tasa de gestión de residuos ha aumentado este 2025, pero no de la misma manera en todos los municipios de Bizkaia. 
+                    En los últimos cinco años, más de la mitad de las localidades han encarecido este impuesto por encima del 10%, y algunas 
+                    han llegado a incrementos de hasta el 170%. Aunque la lógica indicaría que los municipios que más residuos generan pagan más, 
+                    los datos dibujan un escenario muy distinto.
+                    <span class="separator"></span>
+                </p>
+
+                <div class="author-info">
+					<p class="author">
+						Álvaro Hontanar Mateos
+						(<a href="mailto:ahontana@pa.uc3m.es">ahontana@pa.uc3m.es</a>)<br>
+
+						Marina Sánchez Moreno
+						(<a href="mailto:marinasa@pa.uc3m.es">marinasa@pa.uc3m.es</a>)<br>
+    
+						David Rodríguez Mateos
+						(<a href="mailto:pirio@bib.uc3m.es">pirio@bib.uc3m.es</a>)<br>
+
+						(<a href="https://opensciencelab.uc3m.es/team/" target="_blank" class="author-link">OpenScienceLab</a>)
+					</p>
+                    <p class="date">3 de diciembre de 2025</p>
+
+                    <div class="social-buttons">
+
+                        <!-- WhatsApp -->
+                        <a class="share_whatsapp"
+                           href="https://wa.me/?text=Aumento+de+la+tasa+de+basuras+en+Bizkaia+2025+%0Ahttps%3A%2F%2Fopensciencelab-uc3m.github.io%2Fopendatabizkaia%2Faumento-tasa-de-basuras-bizkaia.html"
+                           rel="nofollow noopener" target="_blank">
+                            <svg class="bi bi-whatsapp" fill="#25D366" width="24" height="24" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+                            </svg>
+                        </a>
+
+                        <!-- X (Twitter) -->
+                        <a class="share_twitter"
+                           href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fopensciencelab-uc3m.github.io%2Fopendatabizkaia%2Faumento-tasa-de-basuras-bizkaia.html&text=Aumento+de+la+tasa+de+basuras+en+Bizkaia+2025"
+                           rel="nofollow noopener" target="_blank">
+                            <svg class="bi bi-twitter-x" width="24" height="24" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"></path>
+                            </svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a class="share_facebook"
+                           href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fopensciencelab-uc3m.github.io%2Fopendatabizkaia%2Faumento-tasa-de-basuras-bizkaia.html"
+                           rel="nofollow noopener" target="_blank">
+                            <svg class="bi bi-facebook" fill="#1877F2" width="24" height="24" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                            </svg>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a class="share_linkedin"
+                           href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fopensciencelab-uc3m.github.io%2Fopendatabizkaia%2Faumento-tasa-de-basuras-bizkaia.html"
+                           rel="nofollow noopener" target="_blank">
+                            <img src="logo-linkedin.png" alt="LinkedIn" width="24" height="24">
+                        </a>
+
+                        <!-- Bluesky -->
+                        <a class="share_bluesky"
+                           href="https://bsky.app/intent/compose?text=Aumento+de+la+tasa+de+basuras+en+Bizkaia+2025+https%3A%2F%2Fopensciencelab-uc3m.github.io%2Fopendatabizkaia%2Faumento-tasa-de-basuras-bizkaia.html"
+                           rel="nofollow noopener" target="_blank">
+                            <img src="logo-bluesky.png" alt="Bluesky" width="27" height="24">
+                        </a>
+                    </div>
+                </div>
+
+                <figure style="text-align: center;">
+                    <img src="contenedores-bilbao.jpg" alt="Contenedores en Bilbao"
+                         style="max-width: 100%; height: auto;">
+                    <figcaption style="font-style: italic; text-align: center;">
+                        Fuente:
+                        <a href="https://www.flickr.com/photos/walkingsf/18187694083/" target="_blank">Flickr</a>, por
+                        <a href="https://www.flickr.com/photos/walkingsf/" target="_blank">Erica Fischer</a>.
+                        Imagen publicada bajo licencia
+                        <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY 2.0</a>.
+                        Fecha de consulta: 28/11/2025.
+                    </figcaption>
+                </figure>
+
+                <br>
+
+            </div>
+
+            <!-- ====== GRÁFICO 1 ====== -->
+            <section class="body-article">
+                <p>
+                    La gran mayoría de los municipios de Bizkaia han aumentado en 2025 la tasa de residuos que aplican a cada hogar, de acuerdo con la adaptación de la Directiva (UE) 2018/851 del Parlamento Europeo y del Consejo, que se ha aplicado en todo el Estado español mediante la 
+                    <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2022-5809" target="_blank" rel="noopener noreferrer">
+                        Ley 7/2022 de residuos y suelos contaminados para una economía circular
+                    </a>. 
+                    Esta tasa recoge los gastos de la recogida, transporte y tratamiento de los residuos. La directiva obliga a que 
+                    <a href="https://www.femp.es/sites/default/files/multimedia/CUESTIONES-TASA-RESIDUOS.pdf" target="_blank" rel="noopener noreferrer">
+                        esta tasa sea obligatoria, y además, que cubra el total de los costes de esta recogida
+                    </a>.
+                </p>
+
+                <p>
+                    La aplicación de esta tasa pretende que la recogida no sea deficitaria para los municipios, que son quienes deciden cuál es el coste que repercuten, ya sea a sus vecinos o, dependiendo del contrato de alquiler, a los propietarios de las viviendas.
+                </p>
+
+                <p>
+                    Cada ayuntamiento puede establecer el cálculo de la tasa basándose en varios parámetros, como la cantidad de residuos generados y el nivel de reciclaje, así como en otros factores como el valor catastral de un inmueble o el consumo de agua. Como la norma no establece en qué medida se aplican estos parámetros, los municipios tienen libertad para aplicarla.
+                </p>
+
+                <p>
+                    Estas tasas, no obstante, son 
+                    <strong>bastante desiguales en el conjunto de los municipios de Bizkaia</strong>, 
+                    como recogen los 
+                    <a href="https://www.opendatabizkaia.eus/es/dump/251927ac-a176-423d-869b-e9be427c133c/tipos-tarifas-2023-2026"
+                       target="_blank" rel="noopener noreferrer">
+                        datos sobre impuestos locales
+                    </a> 
+                    (Udaldata) accesibles en el conjunto de datos abiertos Open Data Bizkaia, recogidos por la Diputación Foral de Bizkaia.
+                </p>
+
+                <p>
+                    En el caso más extremo, la tasa media puede llegar a ser hasta 9 veces más cara, si se vive en 
+                    <a href="https://www.opendatabizkaia.eus/es/catalogo/udaldata-ermua" target="_blank" rel="noopener noreferrer"><strong>Ermua</strong></a>, donde cada hogar paga 209 euros, frente a los vecinos de <strong>Zierbena</strong>, que pagan únicamente 28,08 euros por vivienda.
+                    
+                </p>
+
+                <iframe title="Cuanto cuesta recoger los residuos: una tasa, múltiples precios"
+                        aria-label="Mapa coroplético"
+                        id="datawrapper-chart-cPBbP"
+                        src="https://datawrapper.dwcdn.net/cPBbP/2/"
+                        scrolling="no"
+                        frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;"
+                        height="750"
+                        data-external="1">
+                </iframe>
+				<br>
+				<br>
+				<p>
+                    El <strong>rango más habitual de las tasas está entre 75 y 150 euros</strong>, 
+                    aunque también en esta franja media se observan diferencias notables, que alcanzan incluso a municipios limítrofes, 
+                    si bien hay 
+                    <a href="https://www.datawrapper.de/_/cPBbP/" target="_blank" rel="noopener noreferrer">
+                        algunas comarcas, como Enkartazioak/Encartaciones, en las que este tributo se abona de forma más uniforme.
+                    </a>
+                </p>
+				
+                <p>
+                    De esta forma, más de una decena de municipios de Bizkaia demandan a sus vecinos que paguen 
+                    <strong>más de 150 euros por hogar</strong>, 
+                    como muestra la 
+                    <a href="https://public.flourish.studio/visualisation/26559087/" target="_blank" rel="noopener noreferrer">
+                        <strong>siguiente tabla interactiva</strong>
+                    </a>,
+                    que permite buscar por cada municipio, o comparar con otros de la misma comarca. Además de la citada Ermua, 
+                    otros como <strong>Mallabia</strong> (201,52 euros), <strong>Murueta</strong> (184,88 euros), 
+                    <strong>Lezama</strong> (179,20 euros) o <strong>Fruiz</strong> (174,40 euros) encabezan la lista.
+                </p>
+
+                <div class="flourish-embed flourish-table" data-src="visualisation/26559087">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    <noscript>
+                        <img src="https://public.flourish.studio/visualisation/26559087/thumbnail"
+                             width="100%"
+                             alt="table visualization" />
+                    </noscript>
+                </div>
+
+                <h2>¿Quien genera más residuos... paga más?</h2>
+
+                <p>
+                    Una mayor generación de residuos puede inducir a un ayuntamiento para aplicar a sus vecinos una tasa mayor. 
+                    Sin embargo, los datos no parecen estar de acuerdo con esta idea. El Observatorio de Residuos de Garbiker, 
+                    la empresa pública de gestión de residuos de la Diputación Foral, ofrece los datos desagregados de recogidas de 
+                    residuos en cada municipio.
+                </p>
+
+                <p>
+                    Las 
+                    <a href="https://www.opendatabizkaia.eus/es/catalogo/residuos-urbanos" target="_blank" rel="noopener noreferrer">
+                        cifras municipales de recogida de residuos por contenedor, también accesibles a través de Open Data Bizkaia
+                    </a>, 
+                    comparadas con la 
+                    <a href="https://www.eustat.eus/elementos/tbl0014224_c.html" target="_blank" rel="noopener noreferrer">
+                        población municipal ofrecida por Eustat, el Servicio Vasco de Estadística
+                    </a>, 
+                    no ofrecen una relación clara entre residuos recogidos y población, al menos, si comparamos los residuos recogidos 
+                    por habitante y su tasa municipal.
+                </p>
+
+                <p>
+                    <a href="https://www.datawrapper.de/_/rtr8z/?v=7" target="_blank" rel="noopener noreferrer">
+                        El siguiente gráfico compara estas cifras:
+                    </a>
+                </p>
+
+                <div class="graph-container">
+                    <iframe src="https://datawrapper.dwcdn.net/rtr8z/1/"
+                            title="Tasas de basuras Bizkaia"
+                            aria-label="Tasas de basuras Bizkaia"
+                            id="datawrapper-chart-2"
+                            scrolling="no"
+                            frameborder="0"
+                            style="width: 0; min-width: 100% !important; border: none;"
+                            height="761"
+                            data-external="1">
+                    </iframe>
+
+                    <script type="text/javascript">
+                        window.addEventListener("message", function(a) {
+                            if (void 0 !== a.data["datawrapper-height"]) {
+                                var e = document.querySelectorAll("iframe");
+                                for (var t in a.data["datawrapper-height"]) {
+                                    for (var r, i = 0; r = e[i]; i++) {
+                                        if (r.contentWindow === a.source) {
+                                            var d = a.data["datawrapper-height"][t] + "px";
+                                            r.style.height = d;
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+
+                <br>
+
+                <p>
+                    <strong>Zamudio, que produjo la mayor cantidad de residuos contenerizados por habitante en Bizkaia</strong> —862 kilos 
+                    al año en 2024— y que alberga ocho polígonos industriales con cerca de mil empresas, 
+                    <strong>tiene en 2025 una tasa de 97,79 euros</strong>, por debajo de la que aplican medio centenar de municipios del territorio. 
+                    Este caso contrasta con <strong>Valle de Trápaga-Trapagaran</strong>, que cuenta con un peso industrial comparable, pero 
+                    <strong>recoge tres veces menos residuos por habitante</strong>, lo que a priori podría justificar su 
+                    <strong>tasa más baja, 61,64 euros</strong>, situada entre las más reducidas de Bizkaia.
+                </p>
+
+                <p>
+                    Sin embargo, el verdadero contraste aparece al mirar el lado este de Bizkaia. <strong>Ermua</strong>, con apenas 15.627 
+                    habitantes y <strong>una de las cifras de generación de residuos por persona más bajas del territorio</strong>, registra la tasa 
+                    más alta de Bizkaia: 209 euros, muy por encima incluso de ciudades como Bilbao. Y su localidad vecina por el oeste, 
+                    <strong>Mallabia</strong> —un municipio de solo 1.157 habitantes— <strong>presenta la segunda tasa más alta, 183,2 euros</strong>. 
+                    En este caso, sin embargo, la generación de residuos contenerizados, casi 800 kilos por habitante, sí se sitúa entre las más 
+                    elevadas de Bizkaia, lo que sí podría justificar una tasa de residuos más alta. La comparación entre estos casos evidencia una 
+                    disparidad difícil de justificar y un sistema de tasas que no siempre guarda relación con la generación real de residuos.
+                </p>
+				
+				<p>
+					En lo que respecta a la banda media de los municipios, también hay una gran disparidad de tasas que no se corresponde con un mayor volumen de residuos recogidos por habitante. Si bien la mayoría de los municipios recogen en torno a unos 400 kilogramos de residuos, sus tasas oscilan entre los 60 y los 180 euros, sin que tampoco el tamaño o la población de los municipios parezcan tener alguna relación con las tasas.
+				</p>
+
+                <h2>Tampoco las subidas son por igual</h2>
+
+                <p>
+                    En realidad, el fenómeno de las subidas de las tasas de basura no es una decisión que solo haya sucedido tras la aplicación de 
+                    la ley. Si comparamos los datos anuales de las tasas de residuos para cada municipio, que ofrece Open Data Bizkaia en cada uno 
+                    de los años entre 
+                    <a href="https://www.opendatabizkaia.eus/es/dump/589396ca-e02e-4b5b-a9e4-0ad3cc40f73a/tipos-tarifas-2019-2022?format=xlsx" target="_blank" rel="noopener noreferrer">2020</a>
+                    y 
+                    <a href="https://www.opendatabizkaia.eus/es/dump/251927ac-a176-423d-869b-e9be427c133c/tipos-tarifas-2023-2026?format=xlsx" target="_blank" rel="noopener noreferrer">2025</a>, 
+                    surgen algunos aumentos más que notables. Es el caso de Arakaldo, cuya tasa, si bien no es demasiado alta, en torno a unos 
+                    40 euros, prácticamente se ha triplicado, con un aumento del 170%. El gasto es mucho más acusado en 
+                    <strong>Murueta, cuyo coste es hoy más del doble (un 113%) que en 2020</strong>, hasta convertirse en la tercera tasa de residuos 
+                    más cara de Bizkaia: cada hogar murietense pagó unos 185 euros en 2025.
+                </p>
+
+                <p>
+                    Otros 15 municipios han subido esta tasa más de un 50% en los últimos cinco años con tasas duplicadas o más en 
+                    <strong>Arrieta, Berango, Plentzia y Mañaria</strong>. 
+                    Todos ellos han llegado a cargar más de 100 euros por hogar, con 
+                    <strong>valores que llegan en algunos casos a franjas entre 160 y 180 euros</strong>. 
+                    <a href="https://www.datawrapper.de/_/assXP/" target="_blank" rel="noopener noreferrer">
+                        El siguiente gráfico ofrece algunos de los aumentos más significativos.
+                    </a>
+                </p>
+
+                <iframe title="Tras la pandemia, algunas tasas de basura en Bizkaia se han disparado"
+                        aria-label="Gráfico de rangos"
+                        id="datawrapper-chart-assXP"
+                        src="https://datawrapper.dwcdn.net/assXP/1/"
+                        scrolling="no"
+                        frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;"
+                        height="480"
+                        data-external="1">
+                </iframe>
+
+                <script type="text/javascript">
+                    window.addEventListener("message", function(a) {
+                        if (void 0 !== a.data["datawrapper-height"]) {
+                            var e = document.querySelectorAll("iframe");
+                            for (var t in a.data["datawrapper-height"]) {
+                                for (var r, i = 0; r = e[i]; i++) {
+                                    if (r.contentWindow === a.source) {
+                                        var d = a.data["datawrapper-height"][t] + "px";
+                                        r.style.height = d;
+                                    }
+                                }
+                            }
+                        }
+                    });
+                </script>
+				<br>
+				<br>
+
+                <p>
+                    Esta evolución tan dispar evidencia que no solo existe desigualdad en los importes actuales, sino también en la trayectoria 
+                    de cada municipio, lo que repercute directamente en la carga económica que asumen los hogares. La ausencia de una relación 
+                    clara entre la generación real de residuos y el importe final que pagan los vecinos no parece tener un criterio claro que 
+                    explique estas diferencias, más allá del lugar en el que se viva.
+                </p>
+
+            </section>
+
+        </main>
+
+        <!-- ====== PIE DE PÁGINA ====== -->
+        <footer>
+            <p>
+                2025 Open Data Bizkaia |
+                Recurso desarrollado por
+                <strong>
+                    <a href="https://opensciencelab.uc3m.es/" target="_blank">OpenScienceLab UC3M</a>.
+                </strong>
+            </p>
+            <br>
+            <p>
+                Publicado bajo licencia
+                <strong>
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank">
+                        CC BY 4.0 Atribución/Reconocimiento 4.0 Internacional
+                    </a>.
+                </strong>
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

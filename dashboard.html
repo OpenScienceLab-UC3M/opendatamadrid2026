@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLens Bizkaia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="duero-compressed.png">
+    <style>
+        /* Estilos para las secciones */
+        .section {
+            display: none; /* Ocultamos las secciones por defecto */
+            padding: 20px 40px; /* Aumentar padding de izquierda y derecha */
+            background-color: white; /* Fondo blanco para las secciones */
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            transition: all 0.3s ease; /* Transición suave */
+        }
+
+        /* Estilos de los botones */
+        .button {
+            background-color: #d20a11; /* Fondo rojo */
+            color: white;
+            padding: 12px 24px;
+            margin: 10px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-block; /* Los botones estarán en línea */
+        }
+
+        .button:hover {
+            background-color: #a8090f; /* Un tono más oscuro cuando pasa el ratón */
+            transform: scale(1.05); /* Efecto de escala */
+        }
+
+        .button:focus {
+            outline: none; /* Eliminamos el borde al hacer foco */
+        }
+    </style>
+</head>
+<body>
+    <!-- ====== CABECERA / NAVBAR ====== -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Bizkaia Environmental Data Hub</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="video-evolucion-del-reciclaje-bizkaia.html">Vídeo</a></li>
+                <li><a href="aumento-tasa-de-basuras-bizkaia.html">Reportaje</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- ====== CONTENIDO PRINCIPAL ====== -->
+    <main class="dashboard">
+        <!-- Hero con presentación -->
+        <section class="hero">
+                <h1>EcoLens Bizkaia</h1>
+                <p>
+                    Los datos de residuos de Bizkaia esconden historias: quién recicla más, qué fracciones pesan más en cada comarca, cómo evolucionan los municipios o quién paga más tasas de residuos. Usa los gráficos interactivos para navegar por el territorio, comparar municipios y explorar tendencias reales entre 2020 y 2025.
+                </p>
+        </section>
+
+        <!-- Botones para abrir las secciones en línea -->
+        <div style="text-align: center;">
+            <button class="button" onclick="toggleSection('entorno')">Explora tu entorno</button>
+            <button class="button" onclick="toggleSection('carrera')">La carrera del reciclaje</button>
+            <button class="button" onclick="toggleSection('adn')">El ADN del reciclaje</button>
+            <button class="button" onclick="toggleSection('mapa')">Residuos en Bizkaia</button>
+        </div>
+
+        <!-- Secciones que se mostrarán/ocultarán -->
+        <div id="entorno" class="section">
+            <h2>Explora tu entorno</h2>
+            <p>Busca tu municipio y descubre cómo se sitúa en tres dimensiones clave: renta, recogida selectiva de residuos y tasa de residuos. Mueve el cursor por el gráfico, filtra por categoría o busca directamente por nombre para entender si tu municipio se parece más a los que reciclan mucho… o a los que aún tienen margen de mejora.</p>
+			<div class="flourish-embed flourish-table" data-src="visualisation/26615892"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26615892/thumbnail" width="100%" alt="table visualization" /></noscript></div>
+        </div>
+
+        <div id="carrera" class="section">
+            <h2>La carrera del reciclaje</h2>
+            <h3>¿Qué comarca recicla mejor?</h3>
+            <p>Observa cómo ha cambiado el porcentaje de reciclaje contenerizado en cada comarca entre 2020 y 2024. Pasa el ratón por las líneas para ver los valores exactos, compara comarcas o selecciona solo las que te interesen.</p>
+			<p>Porcentaje de reciclaje* de los residuos domésticos contenerizados por comarca y por año.</p>
+            <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26615922"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26615922/thumbnail" width="100%" alt="bar-chart-race visualization" /></noscript></div>
+			<h3>¿Qué municipio recicla mejor?</h3>
+            <p>Observa cómo ha cambiado el porcentaje de reciclaje contenerizado en cada municipio entre 2020 y 2024. Pasa el ratón por las líneas para ver los valores exactos, compara comarcas o selecciona solo las que te interesen.</p>
+            <p>Porcentaje de reciclaje* de los residuos domésticos contenerizados por comarca y por año.</p>
+			<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/26616061"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26616061/thumbnail" width="100%" alt="bar-chart-race visualization" /></noscript></div>
+        </div>
+
+        <div id="adn" class="section">
+            <h2>El ADN del reciclaje</h2>
+            <p>No todas las regiones reciclan igual. Algunas destacan por el papel-cartón, otras por el vidrio o el biorresiduo. Estos radares te muestran el perfil de reciclaje contenerizado de cada comarca o municipio: su fortaleza, debilidades y características únicas.</p>
+            <h3>¿Qué recicla cada comarca?</h3>
+			<p>Peso relativo de cada fracción reciclable —papel, vidrio, envases, biorresiduo y voluminosos— dentro del total reciclado contenerizado en cada comarca de Bizkaia. El radar permite comparar el perfil de reciclaje de cada comarca, identificando fortalezas y debilidades en su aportación al reciclaje selectivo.</p>
+            <p>Selecciona o pasa el cursor para ver los detalles de cada fracción.</p>
+            <div class="flourish-embed flourish-radar" data-src="visualisation/26616110"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26616110/thumbnail" width="100%" alt="radar visualization" /></noscript></div>
+            <h3>¿Qué recicla cada municipio?</h3>
+            <p>Explora el radar para entender qué aporta cada municipio al reciclaje selectivo y compara patrones entre territorios.</p>
+            <div style="display: flex; width: 100%; gap: 0;">
+				<div class="flourish-embed flourish-radar" data-src="visualisation/26616152" style="flex: 1;"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26616152/thumbnail" width="100%" alt="radar visualization" /></noscript></div>
+				<div class="flourish-embed flourish-radar" data-src="visualisation/26616152" style="flex: 1;"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26616152/thumbnail" width="100%" alt="radar visualization" /></noscript></div>
+			</div>
+        </div>
+
+        <!-- Nueva sección con el mapa coroplético -->
+        <div id="mapa" class="section">
+            <h2>Residuos en Bizkaia</h2>
+            <p>Este mapa coroplético muestra la distribución de residuos y población en Bizkaia en 2024, permitiendo observar cómo varían las tasas de reciclaje y el volumen de residuos según las diferentes comarcas y municipios.</p>
+            <div class="flourish-embed flourish-map" data-src="visualisation/26614835">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
+                <noscript><img src="https://public.flourish.studio/visualisation/26614835/thumbnail" width="100%" alt="map visualization" /></noscript>
+            </div>
+        </div>
+    </main>
+
+    <!-- ====== PIE DE PÁGINA ====== -->
+    <footer>
+        <p>
+            2025 Open Data Bizkaia | 
+            Recurso desarrollado por 
+            <strong>
+                <a href="https://opensciencelab.uc3m.es/" target="_blank">OpenScienceLab UC3M</a>.
+            </strong>
+        </p>
+        <br>
+        <p>
+            Publicado bajo licencia <strong><a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank">CC BY 4.0 Atribución/Reconocimiento 4.0 Internacional</a>.</strong>
+        </p>
+    </footer>
+	<script src="script.js"></script>
+    <!-- ====== SCRIPTS ====== -->
+    <script>
+        // Función para mostrar solo una sección a la vez
+        function toggleSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                if (section.id === sectionId) {
+                    section.style.display = (section.style.display === "none" || section.style.display === "") ? "block" : "none";
+                } else {
+                    section.style.display = "none"; // Cerrar otras secciones
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
