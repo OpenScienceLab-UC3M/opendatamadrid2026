@@ -420,3 +420,45 @@ h3 {
     height: 500px;        /* ajusta según veas */
     border: none;
 }
+
+.map-switcher {
+    max-width: 900px;   /* igual que tu texto */
+    margin: 40px auto;
+}
+
+/* BOTONES */
+.map-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.map-btn {
+    padding: 8px 16px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.map-btn.active {
+    background: #222;
+    color: white;
+}
+
+/* MAPA */
+.map-container {
+    position: relative;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    display: none;
+}
+
+.map-iframe.active {
+    display: block;
+}
