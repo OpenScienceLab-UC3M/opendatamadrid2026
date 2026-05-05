@@ -408,3 +408,15 @@ h3 {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+.map-grid {
+    display: flex;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.map-iframe {
+    flex: 1;              /* cada mapa ocupa la mitad */
+    height: 500px;        /* ajusta según veas */
+    border: none;
+}
