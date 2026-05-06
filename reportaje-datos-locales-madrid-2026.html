@@ -247,6 +247,40 @@
     </div>
 
 </div>
+
+				<div class="map-switcher">
+    <!-- BOTONES -->
+    <div class="map-buttons">
+        <button class="map-btn active" onclick="showMap('barrio', this)">
+            Por barrio
+        </button>
+        <button class="map-btn" onclick="showMap('distrito', this)">
+            Por distrito
+        </button>
+    </div>			
+
+    <!-- MAPAS -->
+    <div class="map-container">
+
+        <!-- Barrio -->
+        <iframe id="barrio"
+            src="https://flo.uri.sh/visualisation/28797287/embed"
+            class="map-iframe active"
+            frameborder="0"
+            scrolling="no">
+        </iframe>
+
+        <!-- Distrito -->
+        <iframe id="distrito"
+            src="https://flo.uri.sh/visualisation/28797649/embed"
+            class="map-iframe"
+            frameborder="0"
+            scrolling="no">
+        </iframe>
+
+    </div>
+
+</div>
 				
 				<iframe src='https://flo.uri.sh/visualisation/28797287/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
 				<div class="flourish-embed flourish-map" data-src="visualisation/28804338"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28804338/thumbnail" width="100%" alt="map visualization" /></noscript></div>
