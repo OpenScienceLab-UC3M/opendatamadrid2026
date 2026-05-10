@@ -19,4 +19,29 @@ function showMap(type, button) {
     button.classList.add('active');
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    const headings = document.querySelectorAll(".body-article h2");
+    const tocList = document.getElementById("toc-list");
+
+    headings.forEach((heading, index) => {
+
+        // Crear ID automático si no existe
+        if (!heading.id) {
+            heading.id = "seccion-" + index;
+        }
+
+        // Crear elemento del índice
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+            <a href="#${heading.id}">
+                ${heading.textContent}
+            </a>
+        `;
+
+        tocList.appendChild(li);
+    });
+
+});
 
