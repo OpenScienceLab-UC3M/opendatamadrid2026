@@ -120,8 +120,9 @@ header {
 
 /* ====== CONTENIDO PRINCIPAL (ARTÍCULO) ====== */
 main.article {
-    max-width: 800px; /* Estrechar el contenedor principal */
-    margin: 40px auto;
+    max-width: 850px;
+    margin-left: 320px;
+    margin-right: auto;
     padding: 20px;
 }
 
@@ -520,14 +521,6 @@ h3 {
 }
 
 
-/* ===== CONTENIDO ===== */
-
-.article {
-    max-width: 850px;
-    margin-left: 320px;
-    margin-right: auto;
-    padding: 20px;
-}
 
 /* Ocultar solo en pantallas pequeñas */
 @media (max-width: 1100px) {
