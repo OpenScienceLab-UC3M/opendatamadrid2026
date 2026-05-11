@@ -158,7 +158,7 @@ p {
     font-size: 18px;
     color: #333;
     line-height: 1.6;
-    margin-bottom: 30px;/
+    margin-bottom: 30px;
 }
 
 /* ====== SECCIONES DE GRÁFICOS ====== */
@@ -474,63 +474,64 @@ h3 {
 
 /* ===== ÍNDICE FLOTANTE ===== */
 
-.toc{
+.toc {
     position: fixed;
-    top: 120px;
-    left: 40px;
-
-    width: 240px;
-    max-height: calc(100vh - 140px);
+    top: 140px;
+    left: 32px;
+    width: 230px;
+    max-height: calc(100vh - 170px);
     overflow-y: auto;
-
     padding: 1rem;
     background: rgba(255,255,255,0.96);
-    border-left: 3px solid #ddd;
-
-    font-size: 0.95rem;
+    border-left: 3px solid #d20a11;
+    font-size: 0.9rem;
     z-index: 999;
 }
 
-.toc h3{
-    margin-top: 0;
-    margin-bottom: 1rem;
+.toc h3 {
+    margin: 0 0 1rem 0;
     font-size: 1rem;
+    color: #d20a11;
 }
 
-.toc ul{
+.toc ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.toc li{
-    margin-bottom: 0.8rem;
+.toc li {
+    margin: 0 0 0.8rem 0;
+    padding-left: 0;
 }
 
-.toc a{
+.toc li::before {
+    content: none;
+}
+
+.toc a {
     text-decoration: none;
     color: #333;
-    line-height: 1.4;
-    transition: color 0.2s ease;
+    line-height: 1.35;
 }
 
-.toc a:hover{
-    color: #0077cc;
+.toc a:hover {
+    color: #d20a11;
 }
+
 
 /* ===== CONTENIDO ===== */
 
-.article{
+.article {
     max-width: 850px;
-    margin: 0 auto;
+    margin-left: 320px;
+    margin-right: auto;
+    padding: 20px;
 }
 
-/* ===== RESPONSIVE ===== */
-
-@media (max-width: 1400px){
-
-    .toc{
+/* Ocultar solo en pantallas pequeñas */
+@media (max-width: 1100px) {
+    .toc {
         display: none;
     }
-
 }
