@@ -476,26 +476,19 @@ h3 {
 
 .toc{
     position: fixed;
-
     top: 120px;
-
     left: 40px;
 
     width: 240px;
-
     max-height: calc(100vh - 140px);
-
     overflow-y: auto;
 
     padding: 1rem;
-
     background: rgba(255,255,255,0.96);
-
     border-left: 3px solid #ddd;
 
     font-size: 0.95rem;
-
-    z-index: 100;
+    z-index: 999;
 }
 
 .toc h3{
