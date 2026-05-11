@@ -20,28 +20,24 @@ function showMap(type, button) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-
     const headings = document.querySelectorAll(".body-article h2");
     const tocList = document.getElementById("toc-list");
 
-    headings.forEach((heading, index) => {
+    if (!tocList || headings.length === 0) return;
 
-        // Crear ID automático si no existe
+    headings.forEach((heading, index) => {
         if (!heading.id) {
             heading.id = "seccion-" + index;
         }
 
-        // Crear elemento del índice
         const li = document.createElement("li");
+        const link = document.createElement("a");
 
-        li.innerHTML = `
-            <a href="#${heading.id}">
-                ${heading.textContent}
-            </a>
-        `;
+        link.href = "#" + heading.id;
+        link.textContent = heading.textContent;
 
+        li.appendChild(link);
         tocList.appendChild(li);
     });
-
 });
 
