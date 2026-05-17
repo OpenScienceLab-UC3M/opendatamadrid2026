@@ -46,6 +46,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // ===== RESALTAR SECCIÓN ACTIVA =====
 
     const tocLinks = document.querySelectorAll(".toc a");
+    tocLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        tocLinks.forEach(l => {
+            l.classList.remove("active");
+        });
+
+        link.classList.add("active");
+
+    });
+
+});
 
     const observer = new IntersectionObserver((entries) => {
 
