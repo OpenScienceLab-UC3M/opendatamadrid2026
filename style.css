@@ -520,7 +520,10 @@ h3 {
     color: #d20a11;
 }
 
-
+.toc a.active{
+    font-weight: 700;
+    color: #d20a11;
+}
 
 /* Ocultar solo en pantallas pequeñas */
 @media (max-width: 1100px) {
@@ -545,3 +548,4 @@ h3 {
 .metodologia p:last-child{
     margin-bottom: 0;
 }
+
