@@ -20,24 +20,62 @@ function showMap(type, button) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
     const headings = document.querySelectorAll(".body-article h2");
     const tocList = document.getElementById("toc-list");
 
-    if (!tocList || headings.length === 0) return;
-
     headings.forEach((heading, index) => {
+
+        // Crear ID automático
         if (!heading.id) {
             heading.id = "seccion-" + index;
         }
 
+        // Crear enlace índice
         const li = document.createElement("li");
-        const link = document.createElement("a");
 
-        link.href = "#" + heading.id;
-        link.textContent = heading.textContent;
+        li.innerHTML = `
+            <a href="#${heading.id}">
+                ${heading.textContent}
+            </a>
+        `;
 
-        li.appendChild(link);
         tocList.appendChild(li);
     });
+
+    // ===== RESALTAR SECCIÓN ACTIVA =====
+
+    const tocLinks = document.querySelectorAll(".toc a");
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+
+                tocLinks.forEach(link => {
+                    link.classList.remove("active");
+                });
+
+                const activeLink = document.querySelector(
+                    `.toc a[href="#${entry.target.id}"]`
+                );
+
+                if(activeLink){
+                    activeLink.classList.add("active");
+                }
+            }
+
+        });
+
+    }, {
+        rootMargin: "-40% 0px -50% 0px",
+        threshold: 0
+    });
+
+    headings.forEach(heading => {
+        observer.observe(heading);
+    });
+
 });
 
