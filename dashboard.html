@@ -61,7 +61,7 @@
     <main class="dashboard">
         <!-- Hero con presentación -->
         <section class="hero">
-                <h1>Observatorio de locales comerciales en Madrid.</h1>
+                <h1>Observatorio de locales comerciales en Madrid</h1>
                 <p>
 					Explora visualizaciones interactivas y analiza la evolución del comercio en Madrid desde múltiples perspectivas: aperturas, cierres y transformación de los locales.
                 </p>
@@ -69,63 +69,122 @@
 
         <!-- Botones para abrir las secciones en línea -->
         <div style="text-align: center;">
-            <button class="button" onclick="toggleSection('intro')">¿A qué se dedican quienes emprenden en Madrid?</button>
-            <button class="button" onclick="toggleSection('cementerio')">El cementerio de locales</button>
-            <button class="button" onclick="toggleSection('zonacero')">Las zonas cero de los cierres</button>
+            <button class="button" onclick="toggleSection('intro')">¿De qué vive Madrid? Una ciudad de bares, tiendas y peluquerías</button>
+			<button class="button" onclick="toggleSection('vivienda')">¿Vender o vivir?</button>
+            <button class="button" onclick="toggleSection('emprendimiento')">Madrid se reinventa</button>
+            <button class="button" onclick="toggleSection('cementerios')">Los cementerios de locales</button>
+            <button class="button" onclick="toggleSection('vacia')">La ciudad que se vacía por zonas</button>
+            <button class="button" onclick="toggleSection('abandono')">El abandono que se convirtió en paisaje</button>
+            <button class="button" onclick="toggleSection('pandemia')">La pandemia se fue, sus efectos se quedaron</button>
+            <button class="button" onclick="toggleSection('renta')">El dinero marca la diferencia</button>
         </div>
 
         <!-- Secciones que se mostrarán/ocultarán -->
         <div id="intro" class="section">
-            <h2>Madrid, una ciudad de bares, tiendas y peluquerías</h2>
+            <h2>¿De qué vive Madrid? Una ciudad de bares, tiendas y peluquerías</h2>
             <p>Detrás de los 162.000 locales abiertos en Madrid, el comercio y la hostelería marcan el pulso de la ciudad</p>
-			<div class="flourish-embed flourish-hierarchy" data-src="visualisation/28822245"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28822245/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>        </div>
+				<div class="flourish-embed flourish-hierarchy" data-src="visualisation/28822245"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28822245/thumbnail" width="100%" alt="hierarchy visualization" /></noscript></div>
+		</div>
+		<div id="vivienda" class="section">
+            <h2>¿Vender o vivir?</h2>
+            <p>En marzo de 2026, el Censo recogía 5.300 referencias, muchas de ellas, pisos convertidos en <strong>viviendas turísticas</strong>. Asimismo, otras 8.400 referencias recogen los datos, principalmente a ras de calle, de antiguos locales convertidos oficialmente en <strong>nuevas viviendas</strong>. En total, más de 13.000 registros del Censo de Locales, 7 de cada 100 en toda la ciudad, ofrecen información no ya sobre dónde se vende, sino sobre dónde se vive, sea temporal o permanentemente.	Todas ellas conforman un mapa al que se puede descender barrio por barrio, y sección por sección, para ahondar en los detalles.
+			</p>
+				<div class="flourish-embed flourish-map" data-src="visualisation/28891135"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28891135/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+			<p>
+				<strong>Embajadores</strong> es el barrio que encabeza la lista. Más de 1.100 viviendas turísticas han convertido a la zona en una alternativa para que los turistas se alojen en la ciudad. Estas cifras suponen, de hecho, que 1 de cada 5 locales censados en todo el barrio está dedicado actualmente a hospedar visitantes.
+			</p>
+				<div class="flourish-embed" data-src="story/3672914"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/story/3672914/thumbnail" width="100%" alt="visualization" /></noscript></div>
 
-        <div id="cementerio" class="section">
-            <h2>Cementerio de locales</h2>
-			<p>“El ‘cementerio de locales’ de Madrid refleja la cara oculta del emprendimiento: más de 53.000 negocios han bajado la persiana en la última década.”</p>
-            <div class="flourish-embed flourish-slope" data-src="visualisation/28822967"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28822967/thumbnail" width="100%" alt="slope visualization" /></noscript></div>
-		
 		</div>
 
-        <div id="zonacero" class="section">
-            <h2>Cierres permanentes</h2>
-            <p>El cierre de locales no afecta a toda la ciudad por igual: en algunas zonas de Madrid se acumulan auténticas ‘zonas calientes’ de actividad perdida.</p>
-            <div style="display: flex; width: 100%; gap: 0;">
-				<div class="flourish-embed flourish-map" data-src="visualisation/28797649"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28797649/thumbnail" width="100%" alt="map visualization" /></noscript></div>
-				<div class="flourish-embed flourish-map" data-src="visualisation/28797287"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28797287/thumbnail" width="100%" alt="map visualization" /></noscript></div>
-				<div class="flourish-embed flourish-map" data-src="visualisation/28796480"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28796480/thumbnail" width="100%" alt="map visualization" /></noscript></div>
-			</div>
-			
-			<h3>Por distritos:</h3>
-			<div class="flourish-embed flourish-map" data-src="visualisation/28797649"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28797649/thumbnail" width="100%" alt="map visualization" /></noscript></div>
-			
-			<h3>Por barrio</h3>
-			<div class="flourish-embed flourish-map" data-src="visualisation/28797287"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28797287/thumbnail" width="100%" alt="map visualization" /></noscript></div>
-			
-			<h3>Por sección censal</h3>
-			<div class="flourish-embed flourish-map" data-src="visualisation/28796480"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28796480/thumbnail" width="100%" alt="map visualization" /></noscript></div>
-            
-			<h2>Cierres en 2026 vs 2019</h2>
-			<div class="flourish-embed flourish-map" data-src="visualisation/28804338"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28804338/thumbnail" width="100%" alt="map visualization" /></noscript></div>
-			
-            
-			<div style="display: flex; width: 100%; gap: 0;">
-				<div class="flourish-embed flourish-map" data-src="visualisation/28803946"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28803946/thumbnail" width="100%" alt="map visualization" /></noscript></div>                
-                <div class="flourish-embed flourish-map" data-src="visualisation/28804338"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28804338/thumbnail" width="100%" alt="map visualization" /></noscript></div> 
-            </div>
-				
-			
-        </div>
+		<div id="emprendimiento" class="section">
+            <h2>Madrid se reinventa</h2>
+			<p>
+				El Censo refleja una transformación desigual del tejido económico madrileño: mientras sectores vinculados a la nueva economía urbana —como <strong>consultoras, despachos jurídicos, empresas tecnológicas, agencias de publicidad u oficinas</strong>— se apoyan mayoritariamente en locales abiertos desde 2019, actividades más tradicionales como <strong>farmacias, talleres, bancos, bares con cocina o establecimientos religiosos</strong> conservan todavía gran parte de su tejido histórico y muestran una renovación mucho más lenta.			
+			</p>
+			<div class="flourish-embed flourish-chart" data-src="visualisation/28863421"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28863421/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+			<p>
+					Sin embargo, <strong>abrir nuevos establecimientos no garantiza sobrevivir</strong>. Por ejemplo, abrir más de 1.000 locales relacionados con la <strong>energía eléctrica o el gas natural</strong> en los últimos siete años no fue siempre un buen negocio: <strong>1 de cada 3 no logró sobrevivir</strong> hasta 2026.
+			</p>
+				<div class="flourish-embed flourish-chart" data-src="visualisation/28858112"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28858112/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+			<p>
+					En otros sectores, <strong>la rotación también ha sido intensa.</strong> Las <strong>actividades administrativas y de reprografía</strong>, que encabezan el ranking de nuevos locales con casi 7.800 aperturas desde 2019, acumulan cerca de un millar de negocios que no sobrevivieron. Algo parecido ocurre con <strong>peluquerías, centros de estética, consultas médicas o depósitos y almacenes</strong>, donde alrededor de 1 de cada 10 nuevos locales terminó cerrando.
+			</p>
+		</div>
 
-        <!-- Nueva sección con el mapa coroplético -->
-        <div id="mapa" class="section">
-            <h2>Ejemplo Gráfico 4: Residuos en Bizkaia</h2>
-            <p>Este mapa coroplético muestra la distribución de residuos y población en Bizkaia en 2024, permitiendo observar cómo varían las tasas de reciclaje y el volumen de residuos según las diferentes comarcas y municipios.</p>
-            <div class="flourish-embed flourish-map" data-src="visualisation/26614835">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript><img src="https://public.flourish.studio/visualisation/26614835/thumbnail" width="100%" alt="map visualization" /></noscript>
-            </div>
-        </div>
+        <div id="cementerios" class="section">
+            <h2>Los cementerios de locales</h2>
+			<p>
+				El cierre de más de 50.000 locales desde 2019 ha dejado una huella especialmente visible en el comercio cotidiano madrileño: hoy sobreviven apenas la mitad de las carnicerías y solo seis de cada diez oficinas bancarias, mientras sectores tradicionales como fruterías, pescaderías, ferreterías, pastelerías, pollerías o tiendas de ropa han perdido entre el 15% y el 25% de sus establecimientos.			</p> 
+			</p> 
+				<div class="flourish-embed flourish-table" data-src="visualisation/28944661"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28944661/thumbnail" width="100%" alt="table visualization" /></noscript></div>	
+			<p>
+				Mientras las peluquerías tradicionales pierden cientos de locales desde 2019, los negocios vinculados al cuidado de la salud y el bienestar —especialmente fisioterapia y odontología— se han multiplicado hasta superar los 7.000 establecimientos en Madrid.</p>
+		</div>
+
+        <div id="vacia" class="section">
+            <h2>La ciudad que se vacía por zonas</h2>
+			<p>
+				Los cierres están desigualmente repartidos por las diferentes zonas de la ciudad. Si comparamos los datos entre 2019 y 2026, observaremos que se cumple un patrón en determinados barrios, y especialmente, en el área suroeste de la ciudad. En marzo de 2026, prácticamente todos los barrios de <strong>Carabanchel, Latina, Villaverde, Puente de Vallecas, Villa de Vallecas, y Vicálvaro</strong> cuentan por <strong>cerrados 25 de cada 100 locales</strong>. 
+			</p>
+			<div style="display: flex; width: 100%; gap: 0; text-align: center;">
+					<div class="flourish-embed flourish-map" data-src="visualisation/28804338"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28804338/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+					<div class="flourish-embed flourish-map" data-src="visualisation/28803946"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28803946/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+			</div>	
+			<p>
+				Si se analiza el cierre de locales a escala casi calle a calle, el Censo revela pequeñas “islas” comerciales debilitadas que, en algunos barrios, llegan a formar auténticos archipiélagos de manzanas marcadas por la persiana bajada, con zonas donde entre la mitad y más del 60% de los establecimientos permanecen cerrados			
+			</p>
+			<div class="flourish-embed flourish-map" data-src="visualisation/28888018"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28888018/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+			<p>
+				Puente de Vallecas concentra algunas de las mayores bolsas de cierre comercial de Madrid: decenas de sus secciones censales superan el 40% de locales cerrados y barrios como Entrevías alcanzan cifras extremas, con más de la mitad de los establecimientos sin actividad, una situación que también se repite en zonas de Villaverde, Carabanchel, Latina o Tetuán.
+			</p>
+			<div class="flourish-embed flourish-table" data-src="visualisation/28889253"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28889253/thumbnail" width="100%" alt="table visualization" /></noscript></div>
+		</div>
+
+		<div id="abandono" class="section">
+			<h2>El abandono que se convirtió en paisaje</h2>
+			<p>
+				En lo que se refiere a los locales que pueden considerarse como “<strong>cierres históricos</strong>”, es decir, cerrados desde antes de enero de 2019, distritos como <strong>Villaverde </strong>o <strong>Puente de Vallecas</strong> incluyen casi un <strong>25%</strong> de locales que cumplen ese criterio. Y otros como <strong>Latina, Carabanchel, Usera o Ciudad Lineal</strong> mantiene <strong>un local cerrado permanentemente por cada cuatro abiertos</strong>.
+			</p>
+			<div class="flourish-embed flourish-map" data-src="visualisation/28797649"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28797649/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+			<p>
+				Barrio por barrio, hay un <strong>cinturón de barrios que tienen una mayor tasa de locales en cierre permanente</strong>, con valores por encima del 25%, como <strong>Los Cármenes</strong> o <strong>San Andrés</strong>, e incluso del 30%, el caso de <strong>Entrevías </strong>o <strong>Amposta</strong>.
+			</p>
+			<div class="flourish-embed flourish-map" data-src="visualisation/28797287"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28797287/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+			<p>
+				Por secciones censales, algunas se aproximan a páramos consolidados, comercialmente hablando: 
+			</p>
+			<div class="flourish-embed flourish-map" data-src="visualisation/28796480"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28796480/thumbnail" width="100%" alt="map visualization" /></noscript></div>
+		</div>
+		
+		<div id="pandemia" class="section">
+		<h2>La pandemia se fue, sus efectos se quedaron</h2>
+		<p>
+			La pandemia de Covid-19 dejó una de las mayores sacudidas recientes sobre el comercio madrileño: entre octubre y noviembre de 2021 cerca de 9.000 locales echaron el cierre y, en la mayoría de los casos, aquellas persianas nunca volvieron a levantarse.
+		</p>
+			<div class="flourish-embed flourish-chart" data-src="visualisation/28796930"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28796930/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+		<p>
+			La crisis derivada de la pandemia golpeó especialmente a la producción industrial madrileña, donde algunas actividades perdieron entre el 10% y el 30% de sus locales en apenas dos meses, con especial impacto en la industria textil, la madera o la fabricación de materiales de transporte.
+		</p>
+			<div class="flourish-embed flourish-chart" data-src="visualisation/28911025"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28911025/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+		<p>
+			La tragedia, no obstante, se vivio con mayor intensidad aún en algunas de las zonas que ya tenían una mayor tasa de locales previamente cerrados. A la cabeza, barrios como San Isidro, Los Cármenes, Atalaya, Entrevías o Puerta Bonita, en los que llovió sin duda sobre mojado.
+		</p>
+			<div class="flourish-embed flourish-table" data-src="visualisation/28910442"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28910442/thumbnail" width="100%" alt="table visualization" /></noscript></div>
+
+		</div>	
+		<div id="renta" class="section">
+			<h2>El dinero marca la diferencia</h2>
+			<p>
+					Los datos parecen apuntar a dos fenómenos que relacionan los cierre de locales con la renta de las zonas en la que se encuentran. El primero, que los barrios con mejores rentas suelen tener una menor tasa de cierre de sus locales. El segundo, que esos cierres son también permanentes más a menudo en esos mismos barrios más pobres.
+			</p>
+				<div class="flourish-embed flourish-scatter" data-src="visualisation/28850280"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28850280/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+				
+		</div>
+			
+
+        
+        
     </main>
 
     <!-- ====== PIE DE PÁGINA ====== -->
